@@ -21,7 +21,7 @@ public class Conector {
 
         Connection con;
         try {
-            con = DriverManager.getConnection("jdbc:firebirdsql:192.168.10.1/3050:/sistemas/geiewin/dados/geie.gdb", "SYSDBA", "masterkey");
+            con = DriverManager.getConnection("jdbc:firebirdsql:192.168.10.1/3050:/sistemas/bd.gdb", "SYSDBA", "masterkey");
 
             return con;
         } catch (SQLException ex) {
